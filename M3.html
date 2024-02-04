@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Vallejo Public Library</title>
+</head>
+
+<body>
+    <header>
+        <h1>Vallejo Public Library</h1>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/about-us.html">About Us</a></li>
+                <li><a href="/join.html">Join</a></li>
+                <li><a href="/book-catalog.html">Book Catalog</a></li>
+                <li><a href="/services.html">Services</a></li>
+            </ul>
+        </nav>
+        <!-- Search Bar -->
+        <form action="/search-results-page.html" method="get">
+            <input type="search" name="search" placeholder="Search books...">
+            <select name="criteria">
+                <option value="title">Title</option>
+                <option value="author">Author</option>
+            </select>
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main>
+        <article>
+            <h2>This Is Going to Hurt</h2>
+            <img src="path-to-the-book-image.jpg" alt="Cover image of 'This Is Going to Hurt'">
+            <p><strong>Author:</strong> Adam Kay</p>
+            <p><Strong>Description:</Strong> Adam kay used to be a junior doctor in the UK, and he writes about all the
+                crazy stuff he went through. Like, the long hours and the tough patients and all the bureaucratic
+                nonsense. But he also shares some really heartwarming stories too.</p>
+            <p><strong>Genres:</strong> Medical, Memoirs, Biography</p>
+            <p><strong>Published:</strong> First published September 7, 2017</p>
+            <p><strong>ISBN:</strong> 9781509858637</p>
+            <p><strong>Total Copies:</strong> 3</p>
+            <p><strong>Available Copies:</strong> 2</p>
+            <button onclick="location.href='/reserve-book.html?bookId=123'">Reserve a Copy</button>
+        </article>
+    </main>
+</body>
+
+<footer>
+    Powered by Vallejo Public Library
+</footer>
+
+</html>
